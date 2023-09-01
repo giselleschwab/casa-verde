@@ -1,7 +1,13 @@
-export default function HomePage(){
-    return(
-        <div>
-            <h1>Casa verde plantas</h1>
-        </div>
+import PageTitle from "../src/components/patterns"
+import Header from "../src/components/Header"
+import Newsletter from "../src/components/Newsletter"
+
+export default function HomePage() {
+    return (
+        <>
+           <PageTitle>Casa verde</PageTitle>
+            <Header />
+            <Newsletter />
+        </>
     )
 }
