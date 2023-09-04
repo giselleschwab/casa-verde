@@ -1,4 +1,4 @@
-import { Container, StyledTitle, SpanTitle, StyledDescription, InputContainer, StyledInput, EmailIcon } from "./style"
+import { Container, StyledTitle, SpanTitle, StyledDescription, StyledInput, StyledInputContainer, StyledImage, StyledButton } from "./style"
 
 
 export default function Newsletter() {
@@ -12,11 +12,11 @@ export default function Newsletter() {
                     nossa newsletter para saber das novidades da marca
                 </StyledDescription>
             </Container>
-
-            <img src='/images/mail.png'></img>
-            <StyledInput type="text" placeholder="Insira seu e-mail" />
-            <button type="submit">Assinar newsletter</button>
-
+            <StyledInputContainer>
+                <StyledImage src="/images/mail.png" alt="icone email" />
+                <StyledInput type="text" placeholder="Insira seu e-mail" />
+                <StyledButton type="submit">Assinar newsletter</StyledButton>
+            </StyledInputContainer>
         </>
     )
 }
