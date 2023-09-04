@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import { MdOutlineMailLock } from 'react-icons';
 
 const customFont = "'Montserrat', sans-serif";
 const customFontPlants = "'Elsie Swash Caps'";
@@ -29,18 +28,47 @@ const SpanTitle = styled.span`
 
 const StyledDescription = styled.p`
     width: 481px;
+    line-height: 26px;
     color: #202020;
     opacity: 0.5;
     font-family: ${customFont}
 `
+const StyledInputContainer = styled.div`
+    position: relative;
+    margin-left: 140px;
 
+`
+const StyledImage = styled.img`
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 21px;
+`
 
 const StyledInput = styled.input`
-    width: 250px;
-    height: 50px;
+    width: 300px;
+    height: 75px;
     background: #FFF;
-    border-color: #FFF;
+    border: transparent;
     box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.06);
+    padding-left: 40px;
+
+    &::placeholder {
+        color: #202020;
+        opacity: 0.3;
+        font-family: ${customFont};
+        font-size: 16px;
+    }
+`
+const StyledButton = styled.button`
+    width: 190px;
+    height: 75px;
+    background-color: #FFCB47;
+    color: #FFF;
+    border: transparent;
+    font-family: ${customFont};
+    font-size: 16px;
 `
 
 export { 
@@ -48,5 +76,8 @@ export {
     StyledTitle,
     SpanTitle, 
     StyledDescription,
+    StyledInputContainer,
+    StyledImage,
     StyledInput,
+    StyledButton,
 };
