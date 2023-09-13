@@ -3,13 +3,20 @@ import { styled } from "styled-components";
 const customFont = "'Montserrat', sans-serif";
 const customFontPlants = "'Elsie Swash Caps'";
 
+const Content = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+`
+
 const Container = styled.form`
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
-    margin-left: 140px;
-    margin-top: 80px;
+
 `
+
+
 const StyledTitle = styled.h2`
     font-family: ${customFont};
     font-size: 22px;
@@ -35,9 +42,7 @@ const StyledDescription = styled.p`
 `
 const StyledInputContainer = styled.div`
     position: relative;
-    margin-left: 140px;
-
-`
+ `
 const StyledImage = styled.img`
     position: absolute;
     left: 10px;
@@ -70,8 +75,12 @@ const StyledButton = styled.button`
     font-family: ${customFont};
     font-size: 16px;
 `
-
-export { 
+const StyledImagePlant = styled.img`
+    width: 600px;
+    
+`
+export {
+    Content,
     Container, 
     StyledTitle,
     SpanTitle, 
@@ -80,4 +89,5 @@ export {
     StyledImage,
     StyledInput,
     StyledButton,
+    StyledImagePlant
 };
