@@ -1,6 +1,7 @@
 import PageTitle from "../src/components/patterns"
 import Header from "../src/components/Header"
 import Newsletter from "../src/components/Newsletter"
+import Banner from "../src/components/Banner"
 
 export default function HomePage() {
     return (
@@ -8,6 +9,7 @@ export default function HomePage() {
            <PageTitle>Casa verde</PageTitle>
             <Header />
             <Newsletter />
+            <Banner />
         </>
     )
 }
